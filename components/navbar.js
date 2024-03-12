@@ -16,19 +16,39 @@ import {
 } from '@chakra-ui/react'
 
 import { HamburgerIcon } from '@chakra-ui/icons'
+import ThemeToggleButton from './theme-toggle-button.js'
 
-const LinkItem = ({ href, path, children }) => {
+// const LinkItem = ({ href, path, children }) => {
+//   const active = path === href
+//   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+//   return (
+//     <NextLink
+//       href={href}
+//       p={2}
+//       bg={active ? 'glassTeal' : undefined}
+//       color={active ? '#202023' : inactiveColor}
+//     >
+//       {children}
+//     </NextLink>
+//   )
+// }
+
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
   return (
-    <NextLink
+    <Link
+      as={NextLink}
       href={href}
+      scroll={false}
       p={2}
-      bg={active ? 'glassTeal' : undefined}
+      bg={active ? 'grassTeal' : undefined}
       color={active ? '#202023' : inactiveColor}
+      target={target}
+      {...props}
     >
       {children}
-    </NextLink>
+    </Link>
   )
 }
 
@@ -75,6 +95,7 @@ const Navbar = props => {
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
+          <ThemeToggleButton />
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu>
               <MenuButton
@@ -93,7 +114,10 @@ const Navbar = props => {
                 <MenuItem as={Link} href="/posts" passHref>
                   Posts
                 </MenuItem>
-                <MenuItem as={Link} href="https://github.com/Sarcovora">
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/Sarcovora/evankuo-homepage"
+                >
                   View Source
                 </MenuItem>
               </MenuList>

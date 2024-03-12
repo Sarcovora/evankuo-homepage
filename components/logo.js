@@ -18,14 +18,11 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  // const footPrintImg = `/images/footprint${useColorModeValue('', '-dark')}.png`
   const badgerFaceImg = `/images/badgerFace${useColorModeValue('', '-dark')}.png`
 
   return (
     <Link href="/">
-      {/* <a> */}
       <LogoBox>
-        {/* <Image src={footPrintImg} width={20} height={20} alt="logo" /> */}
         <Image src={badgerFaceImg} width={20} height={20} alt="logo" />
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
@@ -36,10 +33,8 @@ const Logo = () => {
           Evan Kuo
         </Text>
       </LogoBox>
-      {/* </a> */}
     </Link>
   )
 }
 
 export default Logo
-
