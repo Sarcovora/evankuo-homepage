@@ -1,13 +1,13 @@
-import NextLink from 'next/link'
+// import NextLink from 'next/link'
 import {
-  Link,
+  // Link,
   Container,
   Heading,
   Box,
-  SimpleGrid,
-  Button,
-  List,
-  ListItem,
+  // SimpleGrid,
+  // Button,
+  // List,
+  // ListItem,
   useColorModeValue,
 } from '@chakra-ui/react'
 
@@ -39,4 +39,3 @@ const Page = () => {
 }
 
 export default Page
-
