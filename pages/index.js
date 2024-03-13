@@ -5,14 +5,17 @@ import {
   Heading,
   Box,
   // SimpleGrid,
-  // Button,
+  Button,
   // List,
   // ListItem,
   Image,
   useColorModeValue,
 } from '@chakra-ui/react'
+import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
+import Education from '../components/education'
 
 const Page = () => {
   return (
@@ -25,7 +28,7 @@ const Page = () => {
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m a student studying CS at the University of Texas at
+        Hello, I&apos;m a computer science student at the University of Texas at
         Austin!
       </Box>
 
@@ -91,7 +94,40 @@ const Page = () => {
           </Link>{' '}
           to help organizations process applications easier.
         </Paragraph>
+        <Box align="center" my={4}>
+          <Button
+            as={NextLink}
+            href="/works"
+            scroll={false}
+            rightIcon={<ChevronRightIcon />}
+            colorScheme="teal"
+          >
+            Projects
+          </Button>
+        </Box>
       </Section>
+
+      <Section delay={0.2}>
+        <Education />
+      </Section>
+
+      {/* <Section delay={0.3}> */}
+      {/*   <Heading as="h3" variant="section-title"> */}
+      {/*     Bio (Life Timeline) */}
+      {/*   </Heading> */}
+      {/*   <BioSection> */}
+      {/*     <BioYear>2005</BioYear> */}
+      {/*     Born in Austin, Texas */}
+      {/*   </BioSection> */}
+      {/*   <BioSection> */}
+      {/*     <BioYear>2023</BioYear> */}
+      {/*     Graduated from High School as Valedictorian */}
+      {/*   </BioSection> */}
+      {/*   <BioSection> */}
+      {/*     <BioYear>2023 &ndash; now</BioYear> */}
+      {/*     CS student at the University of Texas at Austin */}
+      {/*   </BioSection> */}
+      {/* </Section> */}
     </Container>
   )
 }
