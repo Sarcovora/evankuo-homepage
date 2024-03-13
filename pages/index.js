@@ -6,12 +6,13 @@ import {
   Box,
   // SimpleGrid,
   Button,
-  // List,
-  // ListItem,
+  List,
+  ListItem,
   Image,
   useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 // import { BioSection, BioYear } from '../components/bio'
@@ -78,6 +79,7 @@ const Page = () => {
           <Link
             as={NextLink}
             href="https://txproduct.notion.site/Texas-Product-Engineering-Organization-bf30d6c098ac4b3889bb1524194fd4b9"
+            target="_blank"
             passHref
             scroll={false}
           >
@@ -87,6 +89,7 @@ const Page = () => {
           <Link
             as={NextLink}
             href="https://thoughtless-teal.vercel.app/"
+            target="_blank"
             passHref
             scroll={false}
           >
@@ -109,6 +112,51 @@ const Page = () => {
 
       <Section delay={0.2}>
         <Education />
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Fencing, Longboarding, Climbing,{' '}
+          <Link
+            href="https://www.instagram.com/evan.kuo.photo/"
+            target="_blank"
+          >
+            Photography
+          </Link>
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+          Other links
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/Sarcovora" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGithub />}
+              >
+                @Sarcovora
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.instagram.com/evan._.kuo/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoInstagram />}
+              >
+                @evan._.kuo
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
       </Section>
 
       {/* <Section delay={0.3}> */}
