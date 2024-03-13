@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -17,6 +18,7 @@ import {
 
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button.js'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -36,6 +38,10 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     </Link>
   )
 }
+
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
   const { path } = props
@@ -75,14 +81,24 @@ const Navbar = props => {
           <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem
+            target="_blank"
+            href="https://github.com/Sarcovora/evankuo-homepage"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoGithub />
+            Source
           </LinkItem>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
+
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-            <Menu>
+            <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
@@ -90,14 +106,11 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={NextLink} href="/" passHref>
+                <MenuItem as={MenuLink} href="/" passHref>
                   About
                 </MenuItem>
-                <MenuItem as={Link} href="/projects" passHref>
+                <MenuItem as={MenuLink} href="/projects" passHref>
                   Projects
-                </MenuItem>
-                <MenuItem as={Link} href="/posts" passHref>
-                  Posts
                 </MenuItem>
                 <MenuItem
                   as={Link}

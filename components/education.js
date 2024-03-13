@@ -7,15 +7,15 @@ const Education = () => (
     </Heading>
     <UnorderedList spacing={4}>
       <ListItem>
-        <Text as="b">
-          <Text as="u">
-            University of Texas at Austin
+        <Text>
+          <Text as="b">
+            <Text as="u">University of Texas at Austin</Text>
+          </Text>
+          <Text as="abbr"> | </Text>
+          <Text as="i">
+            B.S. in Computer Science
             <br />
           </Text>
-        </Text>
-        <Text>
-          Bachelor of Science in Computer Science
-          <br />
         </Text>
         <Text as="i">
           Expected Graduation: May 2026
@@ -46,8 +46,9 @@ const Education = () => (
           <br />
         </Text>
         <Text>
-          <Text as="b">Relevant Coursework</Text>: AP (CSP, CSA, PHY C
-          (Mechanics, E&amp;M), Calc BC, Stats), Honors Linear Algebra <br />
+          <Text as="b">Relevant Coursework</Text>: AP CS Principles, AP CSA, AP
+          Physics C: Mechanics, AP Physics C: E&amp;M, AP Calc BC, AP Stats,
+          Honors Linear Algebra <br />
           <br />
         </Text>
         <Text>
