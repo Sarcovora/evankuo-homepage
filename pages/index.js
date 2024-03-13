@@ -9,7 +9,7 @@ import {
   List,
   ListItem,
   Image,
-  useColorModeValue,
+  // useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
