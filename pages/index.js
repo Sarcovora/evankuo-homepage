@@ -12,7 +12,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 // import { BioSection, BioYear } from '../components/bio'
