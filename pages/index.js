@@ -21,17 +21,17 @@ import Education from '../components/education'
 const Page = () => {
   return (
     <Container>
-      <Box
-        borderRadius="lg"
-        mb={6}
-        p={3}
-        textAlign="center"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-        css={{ backdropFilter: 'blur(10px)' }}
-      >
-        Hello, I&apos;m a computer science student at the University of Texas at
-        Austin!
-      </Box>
+      {/* <Box */}
+      {/*   borderRadius="lg" */}
+      {/*   mb={6} */}
+      {/*   p={3} */}
+      {/*   textAlign="center" */}
+      {/*   bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} */}
+      {/*   css={{ backdropFilter: 'blur(10px)' }} */}
+      {/* > */}
+      {/*   Hello, I&apos;m a computer science student at the University of Texas at */}
+      {/*   Austin! */}
+      {/* </Box> */}
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
@@ -100,7 +100,7 @@ const Page = () => {
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/works"
+            href="/projects"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
