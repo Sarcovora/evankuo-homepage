@@ -4,7 +4,7 @@ import {
   Link,
   List,
   ListItem,
-  AspectRatio,
+  // AspectRatio,
 } from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, ProjectImage, Meta } from '../../components/project'

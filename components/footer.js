@@ -5,7 +5,7 @@ const Footer = () => {
     <Box align="center" opacity={0.4} fontSize="sm">
       This website is built based on the{' '}
       <Link href="https://www.craftz.dog/" isExternal>
-        Takuya Matsuyama's website
+        Takuya Matsuyama&apos;s website
       </Link>
       <br />
       &copy; {new Date().getFullYear()} Evan Kuo. All Rights Reserved.
