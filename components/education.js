@@ -23,9 +23,9 @@ const Education = () => (
           <br />
         </Text>
         <Text>
-          <Text as="b">Relevant Coursework</Text>: Computer Organization &apos;
+          <Text as="b">Relevant Coursework</Text>: Computer Organization &amp;
           Architecture, Robot Learning, Linear Algebra, Probability I, Honors
-          (Data Structures, Discrete Math, Vector Calculus) <br />
+          Data Structures, Honors Discrete Math, Honors Vector Calculus <br />
           <br />
         </Text>
         <Text>
