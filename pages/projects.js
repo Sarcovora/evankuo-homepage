@@ -4,7 +4,8 @@ import Section from '../components/section'
 import { ProjectsGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
-import thumbThoughtless from '../public/images/projects/thoughtless_eyecatch.png'
+import thumbThoughtless from '../public/images/projects/thoughtless/thoughtless_eyecatch.png'
+import thumbQuill from '../public/images/projects/quill/thumbnail.png'
 
 const Projects = () => {
   return (
@@ -25,16 +26,12 @@ const Projects = () => {
               for organizations.
             </ProjectsGridItem>
           </Section>
-          {/* <Section> */}
-          {/*   <ProjectsGridItem */}
-          {/*     id="thoughtless" */}
-          {/*     title="Thoughtless." */}
-          {/*     thumbnail={thumbThoughtless} */}
-          {/*   > */}
-          {/*     A web application that makes the application review process easier */}
-          {/*     for organizations. */}
-          {/*   </ProjectsGridItem> */}
-          {/* </Section> */}
+          <Section>
+            <ProjectsGridItem id="quill" title="Quill" thumbnail={thumbQuill}>
+              Quill is a Modern SaaS-Platform Built With Next.js 14 that allows
+              its users to chat with their PDF Documents
+            </ProjectsGridItem>
+          </Section>
 
           {/* <Section delay={0.1}> */}
           {/*   <ProjectsGridItem */}

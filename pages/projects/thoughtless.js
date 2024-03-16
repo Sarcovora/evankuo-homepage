@@ -12,7 +12,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="Inkdrop">
+  <Layout title="Thoughtless">
     <Container>
       <Title>
         Thoughtless <Badge>2024-</Badge>
@@ -39,17 +39,21 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>React, Firebase, Firestore NextUI, TailwindCSS</span>
+          <span>React, Firebase, Firestore NextUI, TailwindCSS, NextUI</span>
         </ListItem>
       </List>
 
       <ProjectImage
-        src="/images/projects/thoughtless_eyecatch.png"
-        alt="Thoughtless"
+        src="/images/projects/thoughtless/Signup.png"
+        alt="Signup"
       />
       <ProjectImage
-        src="/images/projects/thoughtless_eyecatch.png"
-        alt="Thoughtless"
+        src="/images/projects/thoughtless/Dashboard.png"
+        alt="Dashboard"
+      />
+      <ProjectImage
+        src="/images/projects/thoughtless/ProfileView.png"
+        alt="ProfileView"
       />
     </Container>
   </Layout>
