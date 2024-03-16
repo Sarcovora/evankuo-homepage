@@ -12,7 +12,7 @@ import {
   // useColorModeValue,
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 import Layout from '../components/layouts/article'
@@ -141,6 +141,20 @@ const Page = () => {
           </Heading>
           <List>
             <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/kuo-evan/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoLinkedin />}
+                >
+                  kuo-evan
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
               <Link href="https://github.com/Sarcovora" target="_blank">
                 <Button
                   variant="ghost"
@@ -162,6 +176,20 @@ const Page = () => {
                   leftIcon={<IoLogoInstagram />}
                 >
                   @evan._.kuo
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.instagram.com/evan.kuo.photo/"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<IoLogoInstagram />}
+                >
+                  @evan.kuo.photo
                 </Button>
               </Link>
             </ListItem>
