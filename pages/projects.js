@@ -6,6 +6,7 @@ import Layout from '../components/layouts/article'
 
 import thumbThoughtless from '../public/images/projects/thoughtless/thoughtless_eyecatch.png'
 import thumbQuill from '../public/images/projects/quill/thumbnail.png'
+import logoBevoBook from '../public/images/projects/bevobook/logo.png'
 
 const Projects = () => {
   return (
@@ -30,6 +31,17 @@ const Projects = () => {
             <ProjectsGridItem id="quill" title="Quill" thumbnail={thumbQuill}>
               Quill is a Modern SaaS-Platform Built With Next.js 14 that allows
               its users to chat with their PDF Documents
+            </ProjectsGridItem>
+          </Section>
+
+          <Section delay={0.1}>
+            <ProjectsGridItem
+              id="bevobook"
+              title="BevoBook"
+              thumbnail={logoBevoBook}
+            >
+              Your AI-Powered UT Course Registration Assistant built with
+              Cloudflare AI API.
             </ProjectsGridItem>
           </Section>
 
