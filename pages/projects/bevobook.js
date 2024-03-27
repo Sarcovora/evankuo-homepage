@@ -32,10 +32,10 @@ const Work = () => (
         scrape data once on our side for it to be used in the app. Looking
         forward, we hope to integrate BevoBook with UT authentication for live
         and continuous updates to reflect changes on the course registrar.
-        Additionally, it would be nice to integrate better LLM's: as students,
-        we used the free LLM's available to us via CloudFlare, but to expand, we
-        would like to use (currently paid) versions of the latest, more
-        intelligent LLM's (eg. ChatGPT 4 and Claude 3 Opus).
+        Additionally, it would be nice to integrate better LLM&apos;s: as
+        students, we used the free LLM&apos;s available to us via CloudFlare,
+        but to expand, we would like to use (currently paid) versions of the
+        latest, more intelligent LLM&apos;s (eg. ChatGPT 4 and Claude 3 Opus).
       </P>
       <List ml={4} my={4}>
         <ListItem>
