@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Quill">
     <Container>
       <Title>
-        Quill <Badge>2024</Badge>
+        Quill <Badge>Jan 2024</Badge>
       </Title>
       <P>
         Quill is a Modern SaaS-Platform Built With Next.js 14 that allows its

@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="Thoughtless">
     <Container>
       <Title>
-        Thoughtless <Badge>2024-</Badge>
+        Thoughtless <Badge>Jan-May 2024</Badge>
       </Title>
       <P>
         Many campus organizations use google forms as their member applications

@@ -15,7 +15,7 @@ const Work = () => (
   <Layout title="BevoBook">
     <Container>
       <Title>
-        BevoBook <Badge>2024</Badge> <Meta>Hackathon Winner</Meta>
+        BevoBook <Badge>Mar 2024</Badge> <Meta>Hackathon Winner</Meta>
       </Title>
       <P>
         AI-based application to allow easier access to course registration for
