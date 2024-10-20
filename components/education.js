@@ -22,6 +22,8 @@ const Education = () => (
             <br />
           </Text>
         </Text>
+        <br />
+        <br />
         <Text>
           <Text as="b">Relevant Coursework</Text>: Computer Organization &amp;
           Architecture, Robot Learning, Linear Algebra, Probability I, Honors
