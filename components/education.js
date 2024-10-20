@@ -1,5 +1,10 @@
 import { Box, Heading, Text, UnorderedList, ListItem } from '@chakra-ui/react'
 
+        //<!-- <Text as="i"> -->
+        //<!--   Expected Graduation: May 2026 -->
+        //<!--   <br /> -->
+        //<!--   <br /> -->
+        //<!-- </Text> -->
 const Education = () => (
   <Box mb={6}>
     <Heading as="h3" variant="section-title" mb={4}>
@@ -16,11 +21,6 @@ const Education = () => (
             B.S. in Computer Science
             <br />
           </Text>
-        </Text>
-        <Text as="i">
-          Expected Graduation: May 2026
-          <br />
-          <br />
         </Text>
         <Text>
           <Text as="b">Relevant Coursework</Text>: Computer Organization &amp;
