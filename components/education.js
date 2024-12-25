@@ -24,9 +24,11 @@ const Education = () => (
         </Text>
         <br />
         <Text>
-          <Text as="b">Relevant Coursework</Text>: Computer Organization &amp;
-          Architecture, Robot Learning, Linear Algebra, Probability I, Honors
-          Data Structures, Honors Discrete Math, Honors Vector Calculus <br />
+          <Text as="b">Relevant Coursework</Text>: Operating Systems, 
+          Computer Organization &amp; Architecture, Software Engineering Robot
+          Learning FRI 1 &amp; 2, Competitive Programming, Linear Algebra,
+          Probability I, Honors Data Structures, Honors Discrete Math, Honors
+          Vector Calculus <br />
           <br />
         </Text>
         <Text>
@@ -34,7 +36,7 @@ const Education = () => (
           Organization, UT Programming Competition, RL Directed Reading Program
         </Text>
       </ListItem>
-      <ListItem>
+      {/* <ListItem>
         <Text as="b">
           <Text as="u">
             St. Dominic Savio Catholic High School
@@ -57,7 +59,7 @@ const Education = () => (
           Learning by Andrew Ng, The Concord Consortium: Math Modeling with R,
           BWSI Python Core 2022, BWSI Version Control (Git &amp; GitHub) 2022
         </Text>
-      </ListItem>
+      </ListItem> */}
     </UnorderedList>
   </Box>
 )
