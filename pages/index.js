@@ -76,11 +76,19 @@ const Page = () => {
           </Heading>
           <Paragraph>
             Evan is a student at the University of Texas at Austin who is
-            interested in full-stack development and AI/ML research. Currently,
-            he is a part of the Undergraduate Robot Air Hockey Research Group,
-            focusing on training a robotic arm to play air hockey using
-            Reinforcement Learning. Additionally, he is an engineering fellow in
-            the{' '}
+            studying Computer Science with a minor in Robotics. He is a
+            undergraduate researcher in the{' '}
+            <Link
+              as={NextLink}
+              href="https://midi-lab.github.io/"
+              target="_blank"
+              passHref
+              scroll={false}
+            >
+              MIDI{' '}
+              <ExternalLinkIcon mx="2px" />
+            </Link>{' '}
+            lab and is an engineering fellow in{' '}
             <Link
               as={NextLink}
               href="https://txproduct.notion.site/Texas-Product-Engineering-Organization-bf30d6c098ac4b3889bb1524194fd4b9"
@@ -90,18 +98,7 @@ const Page = () => {
             >
               Texas Product Engineering Organization{' '}
               <ExternalLinkIcon mx="2px" />
-            </Link>{' '}
-            and is working on a web app called{' '}
-            <Link
-              as={NextLink}
-              href="https://thoughtless-teal.vercel.app/"
-              target="_blank"
-              passHref
-              scroll={false}
-            >
-              Thoughtless <ExternalLinkIcon mx="2px" />
-            </Link>{' '}
-            to help organizations process applications easier.
+            </Link>.
           </Paragraph>
           <Box align="center" my={4}>
             <Button
@@ -125,7 +122,7 @@ const Page = () => {
             I ♥
           </Heading>
           <Paragraph>
-            Fencing, Longboarding, Climbing,{' '}
+            Fencing, Longboarding, Climbing, Table Tennis,{' '}
             <Link
               href="https://www.instagram.com/evan.kuo.photo/"
               target="_blank"
